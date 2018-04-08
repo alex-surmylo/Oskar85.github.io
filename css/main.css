@@ -1642,6 +1642,42 @@ a:focus {
   float: right;
 }
 
+.footer-button {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  padding: 30px 30px;
+  line-height: 12px;
+  background: #00a1eb;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.footer-button:before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 3px;
+  background: #fff;
+  top: 35%;
+  left: 40%;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.footer-button:after {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 3px;
+  background: #fff;
+  top: 35%;
+  right: 40%;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
 @media (max-width: 1200px) {
   .header {
     top: 50px;
@@ -1731,6 +1767,9 @@ a:focus {
   .main-title {
     font-size: 60px;
     margin-top: 30px;
+  }
+  .footer-button {
+    display: none !important;
   }
   .footer-botton-item {
     text-align: center;
