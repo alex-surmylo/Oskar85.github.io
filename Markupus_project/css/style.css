@@ -22,7 +22,7 @@ body {
 
 .header-wrap__logo {
   position: absolute;
-  left: 30px;
+  left: 20px;
   cursor: pointer;
   z-index: 10;
   top: 10px;
