@@ -78,7 +78,7 @@
 			$(window).on('scroll', scrollBtn);
 
 			$('.footer-button').on('click', function(e) {
-					$('html,body').animate({
+					$('html,body').stop().animate({
 						scrollTop: 0
 					}, 1000);
 			});
