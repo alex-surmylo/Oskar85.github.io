@@ -3512,6 +3512,10 @@ body {
   color: #000;
 }
 
+.contacts__adress:last-child, .contacts__tel:last-child {
+		margin-top: 5px
+}      
+
 .footer {
   margin: 20px 0 20px;
 }
