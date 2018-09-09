@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$('.main-droplist').hover(function(e) {
 		event.stopPropagation(e);
 		$(this).children('ul').toggleClass('active');
-		$(".main-header .fa").toggleClass('active');
+		$(this).parent(".main-header .fa").toggleClass('active');
 	});
 
 	$('.whatwedo-group').hover(function() {
