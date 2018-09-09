@@ -2411,6 +2411,11 @@ body {
   padding-bottom: 15px;
 }
 
+.main-header .fa.active {
+  transform: rotate(180deg);
+  transition: 0.2s	
+} 
+
 .main-header-menu li {
   display: inline-block;
 }
