@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<script src="jquery-3.3.1.min.js"></script>		
+
+	<div class="items">
+		<div class="item" data-price='1500' ></div>
+		<div class="item" data-price='2000' ></div>
+		<div class="item" data-price='2500' ></div>
+		<div class="item" data-price='3000' ></div>
+		<div class="item" data-price='3500' ></div>
+		<div class="item" data-price='4000' ></div>
+		<div class="item" data-price='4500' ></div>
+		<div class="item" data-price='5000' ></div>
+	</div>
+	<span class="value"></span>
+
+
+<script>
+	$(document).ready(function() {
+
+		var kamil = {
+			name: "Kamil",
+			age: "25",
+			male: "famele"
+		}
+
+		for (key in kamil) {
+			console.log(kamil.key)
+		}
+
+
+		// var item = document.querySelectorAll(".item");
+		// var value = document.querySelector('.value');
+
+		// for (var i = 0; i < item.length; i++) {
+		// 	item[i].onclick = setInterval(function () {
+		// 		this.classList.toggle('active')}, 1000);
+				
+		// }
+
+		// function calcPrice () {
+		// 	var price = 0;
+
+		// 	for (var i = 0; i < item.length; i++) {
+		// 		if(item[i].classList.contains('active')) {
+		// 				price += parseInt(item[i].getAttribute('data-price')) 
+
+		// 		}			
+		// 	 }
+		// 	 value.innerHTML = price 
+		// }	 
+	});
+	
+
+
+
+</script>
+
+</body>
+</html>
