@@ -193,6 +193,8 @@ body {
 
 .menu-dropdown {
   width: 100%;
+  visibility: hidden;
+  opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;

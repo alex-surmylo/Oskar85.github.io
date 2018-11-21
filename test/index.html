@@ -1,67 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>test</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	
-	<script src="jquery-3.3.1.min.js"></script>		
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+		<title>MakeBeCool</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-items">
+					<div class="header-items-fir">
+						<div class="header-logo-items">
+							<img src="img/main-logo.png" alt="logo" class="header-logo__img">
+							<span class="header-logo__desc"></span>
+						</div>	
+						<nav class="header-nav">
+							<ul>
+								<li class="header-nav__item">
+									<a class="header-nav__link" href="#">Одежда на каждый день</a>
+									<i class="fas fa-angle-down"></i>
+									<div class="menu-dropdown">
+										<div class="menu-dropdown-wrap">
+											<ul class="menu-dropdown__col-1">
+												<li><a class="menu-dropdown__link" href="#">Платья</a></li>
+												<li><a class="menu-dropdown__link" href="#">Сарафаны</a></li>
+												<li><a class="menu-dropdown__link" href="#">Блузы</a></li>
+												<li><a class="menu-dropdown__link" href="#">Туники</a></li>
+												<li><a class="menu-dropdown__link" href="#">Юбки</a></li>
+											</ul>
+											<ul class="menu-dropdown__col-2">
+												<li><a class="menu-dropdown__link" href="#">Костюмы</a></li>
+												<li><a class="menu-dropdown__link" href="#">Офисный стиль</a></li>
+												<li><a class="menu-dropdown__link" href="#">Жилеты</a></li>
+												<li><a class="menu-dropdown__link" href="#">Пиджаки</a></li>
+												<li><a class="menu-dropdown__link" href="#">Кардиганы</a></li>
+											</ul>
+										</div>	
+									</div>	
+								</li>
+								<li class="header-nav__item">
+									<a class="header-nav__link" href="#">Спортивная одежда</a>
+									<i class="fas fa-angle-down"></i>
+								</li>
+								<li class="header-nav__item">
+									<a class="header-nav__link" href="#">Верхняя одежда</a>
+									<i class="fas fa-angle-down"></i>
+								</li>
+								<li class="header-nav__item">
+									<a class="header-nav__link" href="#">Скидки</a>
+								</li>
+							</ul>
+						</nav>
+					</div>	
+					<div class="header-items-sec">
+						<div class="select__currency select">
+							<div class="select__header">
+								<span class="select__current">UAH</span>
+								<i class="fas fa-angle-down select__icon"></i>
+							</div>
+							<ul class="select__list">
+								<li class="select__item">USD</li>
+								<li class="select__item">UAH</li>
+							</ul>
+						</div>
+						<div class="select__lang select">
+							<div class="select__header">
+								<span class="select__current">UA</span>
+								<i class="fas fa-angle-down select__icon"></i>
+							</div>
+							<ul class="select__list">
+								<li class="select__item">US</li>
+								<li class="select__item">UA</li>
+							</ul>
+						</div>
+						<div class="header-items-block">
+							<form action="#" class="header__form">
+								<input type="search" placeholder="What're we looking for ?" class="header__search">
+								<i class="fas fa-search"></i>
+							</form>
+							<a href="#">
+								<i class="fas fa-user header-items-sec__user"></i>
+							</a>
+							<a href="#">
+								<i class="fas fa-shopping-bag header-items-sec__bag">
+									<span>0</span>
+								</i>
+							</a>
+							<div class="header-burger">
+								<span class="header-burger__line"></span>
+								<span class="header-burger__line"></span>
+								<span class="header-burger__line"></span>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="sale">
+			<div class="container">
+				<div class="sale-content">
+					<p class="sale-content__title">Sale</p>
+					<p class="sale-content__desc">до 30% на одежду</p>
+					<div class="sale-content__block">
+						<a href="#" class="sale-content__link">Перейти к покупкам</a>
+						<i class="fas fa-angle-right sale-content__arrow"></i>
+					</div>
+					<span class="sale-content__scroll">scroll</span>
+				</div>
+			</div>
+		</section>
+		<!-- <input type="text" name="login">
+		<input type="password" name="password" >
+		<button type="submit" name="submit">Проверка логина и пароля</button> -->
 
-	<div class="items">
-		<div class="item" data-price='1500' ></div>
-		<div class="item" data-price='2000' ></div>
-		<div class="item" data-price='2500' ></div>
-		<div class="item" data-price='3000' ></div>
-		<div class="item" data-price='3500' ></div>
-		<div class="item" data-price='4000' ></div>
-		<div class="item" data-price='4500' ></div>
-		<div class="item" data-price='5000' ></div>
-	</div>
-	<span class="value"></span>
-
-
-<script>
-	$(document).ready(function() {
-
-		var kamil = {
-			name: "Kamil",
-			age: "25",
-			male: "famele"
-		}
-
-		for (key in kamil) {
-			console.log(kamil.key)
-		}
-
-
-		// var item = document.querySelectorAll(".item");
-		// var value = document.querySelector('.value');
-
-		// for (var i = 0; i < item.length; i++) {
-		// 	item[i].onclick = setInterval(function () {
-		// 		this.classList.toggle('active')}, 1000);
-				
-		// }
-
-		// function calcPrice () {
-		// 	var price = 0;
-
-		// 	for (var i = 0; i < item.length; i++) {
-		// 		if(item[i].classList.contains('active')) {
-		// 				price += parseInt(item[i].getAttribute('data-price')) 
-
-		// 		}			
-		// 	 }
-		// 	 value.innerHTML = price 
-		// }	 
-	});
-	
-
-
-
-</script>
-
-</body>
-</html>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+	</html> 
