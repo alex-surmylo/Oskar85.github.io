@@ -170,8 +170,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 40px	0 35px;
 }
 
@@ -262,8 +262,6 @@ body {
   }
   .footer-support__items {
     margin: 0 auto;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
   }
 }
 
@@ -310,8 +308,7 @@ body {
         flex-basis: 100%;
   }
   .footer-support__items {
-    text-align: center;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
