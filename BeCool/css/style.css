@@ -3859,6 +3859,12 @@ body.no-scroll {
   padding-top: 50px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .form__title {
+    font-size: 30px;
+  }
+}
+
 .form__sub {
   font-size: 12px;
   color: #fff;
