@@ -3147,6 +3147,12 @@ body.no-scroll {
   padding: 110px 0 150px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .counters {
+    padding: 60px 0 35px;
+  }
+}
+
 .counters__title {
   font-size: 30px;
   text-transform: uppercase;
@@ -3441,7 +3447,7 @@ body.no-scroll {
 @media (min-width: 320px) and (max-width: 767px) {
   .projects-desk.active {
     padding-top: 160px;
-    padding-bottom: 150px;
+    padding-bottom: 160px;
   }
 }
 

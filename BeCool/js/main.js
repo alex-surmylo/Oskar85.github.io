@@ -121,4 +121,14 @@ $(function(){
 	})
 
 
+	$('.js-arrow').click(() => {
+    $('html, body').animate({
+        scrollTop: $('.whatwedo').offset().top
+
+    }, 1000);
+    specialEasing: {
+      scrollTop: 'swing'
+    }
+});
+
 });
