@@ -3081,6 +3081,7 @@ body.no-scroll {
   -o-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
   opacity: 0;
+  width: 70%;
 }
 
 .global-link a.active {
@@ -3415,6 +3416,7 @@ body.no-scroll {
 .projects__link a {
   color: #9197a1;
   opacity: 1;
+  width: 100%;
 }
 
 .projects__link span {
