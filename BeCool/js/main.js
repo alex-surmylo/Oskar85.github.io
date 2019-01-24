@@ -125,7 +125,7 @@ $(function(){
 	})
 
 
-	$('.js-arrow').click(function() {
+	$('.js-arrow').on('click', function() {
     $('html, body').animate({
         scrollTop: $('.whatwedo').offset().top
 
