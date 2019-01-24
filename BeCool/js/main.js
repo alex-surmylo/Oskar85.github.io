@@ -44,6 +44,10 @@ $(function(){
 		$this.closest('.projects-items').find('.projects__link span').toggleClass('active');
 	});	
 
+	$('.projects-items .projects__link').on('click', function(e) {
+		e.preventDefault();
+	});
+
 	$('.work-item-wrap').hover(function() {
 		var $this = $(this)
 		$this.toggleClass('active');
@@ -130,5 +134,12 @@ $(function(){
       scrollTop: 'swing'
     }
 });
+
+	var file = $('.form .file');
+	file.change(function(e) {
+		file.prev('.file-current').text(($(file)[0].files[0].name))
+	});
+	
+
 
 });

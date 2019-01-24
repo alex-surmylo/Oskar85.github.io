@@ -3792,12 +3792,30 @@ body.no-scroll {
   margin: 30px 0;
 }
 
+.form-field__file .file-text {
+  font-family: "pt_astrasans_reg", sans-serif;
+  display: inline-block;
+  margin-right: 75px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .form-field__file .file-text {
+    margin-bottom: 30px;
+  }
+  .form-field__file .file-text br {
+    display: none;
+  }
+}
+
 .form-field__file label {
   position: relative;
   -webkit-transform: translateY(-16px);
       -ms-transform: translateY(-16px);
           transform: translateY(-16px);
   cursor: pointer;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-width: 200px;
 }
 
 .form-field__file label:before {
@@ -3816,19 +3834,14 @@ body.no-scroll {
   }
 }
 
-.form-field__file span {
-  font-family: "pt_astrasans_reg", sans-serif;
+.form-field__file .file-current {
   display: inline-block;
-  margin-right: 75px;
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .form-field__file span {
-    margin-bottom: 30px;
-  }
-  .form-field__file span br {
-    display: none;
-  }
+  color: #014db7;
+  vertical-align: top;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 155px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -3841,6 +3854,8 @@ body.no-scroll {
   position: absolute;
   overflow: hidden;
   z-index: -1;
+  width: 0;
+  height: 0;
 }
 
 .form-wrap {
