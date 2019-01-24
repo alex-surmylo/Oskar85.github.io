@@ -125,7 +125,7 @@ $(function(){
 	})
 
 
-	$('.js-arrow').click(() => {
+	$('.js-arrow').click(function() {
     $('html, body').animate({
         scrollTop: $('.whatwedo').offset().top
 
@@ -137,9 +137,8 @@ $(function(){
 
 	var file = $('.form .file');
 	file.change(function(e) {
-		file.prev('.file-current').text(($(file)[0].files[0].name))
+		file.siblings('.file-label').text("Файл добавлен")
+		file.siblings('.file-current').text(($(file)[0].files[0].name))
 	});
-	
-
 
 });
