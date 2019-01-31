@@ -4201,6 +4201,7 @@ body.no-scroll {
     width: 100%;
     background: #000;
     z-index: -5;
+    overflow: hidden;
   }
   .main-header__burger {
     display: block;
