@@ -2322,6 +2322,7 @@ body {
 
 body.no-scroll {
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -2827,7 +2828,6 @@ body.no-scroll {
   position: relative;
   width: 24px;
   height: 24px;
-  z-index: 1000;
 }
 
 .menu-global {
