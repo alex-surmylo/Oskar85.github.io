@@ -2321,7 +2321,7 @@ body {
 }
 
 body.no-scroll {
-  overflow: hidden;
+  position: fixed;
 }
 
 .container {
@@ -4204,7 +4204,7 @@ body.no-scroll {
   }
   .menu-mobile--open {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
