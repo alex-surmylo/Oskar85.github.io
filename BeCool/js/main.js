@@ -6,12 +6,6 @@ $(function(){
 		$(this).addClass('pre-header-tel__lang--active');
 	});
 
-	$('.pre-header-tel__lang > img').on('click', function() {
-		$('.pre-header-tel__lang').find('img')
-		.removeClass('pre-header-tel__lang--active')
-		$(this).addClass('pre-header-tel__lang--active');
-	});
-
 	$('.main-droplist').hover(function(e) {
 		$(this).children('ul').toggleClass('active');
 		$(this).find(".fa").toggleClass('active');
@@ -120,7 +114,7 @@ $(function(){
 
 
 	$('.main-header__burger').on('click', function () {
-		$('.main-header-menu').toggleClass('main-header-menu--open');
+		$('.menu-mobile').toggleClass('menu-mobile--open');
 		$('body').toggleClass('no-scroll');
 	})
 
