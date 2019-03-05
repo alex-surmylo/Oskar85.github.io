@@ -3,7 +3,7 @@ $( function() {
     		showAnim: "fadeIn",
     		showOn: "both",
     		buttonImageOnly: true,
-    		buttonImage: "../img/datapicker-icon.png"
+    		buttonImage: "img/datapicker-icon.png"
 		})
 
 		$( ".selectmenu" ).selectmenu({
